@@ -1,0 +1,262 @@
+{% load static %}
+
+<head>
+	<link rel="stylesheet" href="{% static 'website/speakers_and_judges/css/style.css' %}">
+</head>
+
+<section id="speakers_and_judges">
+	<div class="selector">
+		<button onclick="showCorrespondingSpeakersOrJudges(this)" style="background-color: #ffffff90;" data-show=".speakers">Speakers</button>
+		<button onclick="showCorrespondingSpeakersOrJudges(this)" data-show=".judges">Judges</button>
+	</div>
+
+	<div class="speakers-judges-container">
+		<div class="speakers">
+			<h2 class="heading" data-aos="fade-up">Speakers</h2>
+			<div class="speakers-container">
+				<!-- Copy This -->
+				<button onclick="showCorrespondingSpeakerOrJudge(this)" data-aos="fade-up" class="speaker">
+					<img src="{% static 'website/speakers_and_judges/images/speakers/AmanD.jpg' %}" alt="" width="200px" height="250px">
+					<br />
+					<p class="social-icons">
+						<a href="https://twitter.com/AmanDhattarwal"><i class='bx bxl-twitter'></i></a>
+						<a href="https://www.instagram.com/dhattarwalaman/"><i class='bx bxl-instagram' ></i></a>
+						<a href="https://www.linkedin.com/in/dhattarwalaman/"><i class='bx bxl-linkedin-square' ></i></a>
+					</p>
+					<p class="name">Aman Dhattarwal</p>
+					<p class="date">24th February | 6pm</p>
+					<p class="info"><br> - Designation: Founder of Apni Kaksha <br>
+						- OPEN SESSION <br> <br>
+						Aman Dhattarwal has been helping students across India find their right career path. He is also the #1 Educator of JEE on India's biggest online platform. Aman has been a strong believer in the right to quality education for everyone and with the help of his social media platforms, he has helped millions of students find their path to success in the last 5 years.</p>
+				</button>
+
+				<!-- Add More Here -->
+				<button onclick="showCorrespondingSpeakerOrJudge(this)" data-aos="fade-up" class="speaker">
+					<img src="{% static 'website/speakers_and_judges/images/speakers/mamta.jpg' %}" alt="" width="200px" height="250px">
+					<br />
+					<p class="social-icons">
+						<!-- <a href=""><i class='bx bxl-twitter'></i></a> -->
+						<a href="https://www.instagram.com/prepbytes/"><i class='bx bxl-instagram' ></i></a>
+						<a href="https://www.linkedin.com/in/mamta-kumari-6a9579114/"><i class='bx bxl-linkedin-square' ></i></a>
+					</p>
+					<p class="name">Ms. Mamta Kumari</p>
+					<p class="date">25th February | 6pm</p>
+					<p class="info"><br> - Designation: Co-Founder, Prepbytes <br>
+						- Topic: When and how to start building projects?<br> <br>
+						Mrs. Mamta Kumari is the founder and CEO of PrepBytes. She is an alumni of NIT Jamshedpur and has worked at Amazon. Through PrepBytes she aims to build a Mentorship Driven Online Placement Preparation Program that can take students closer to their placements.
+
+					</p>
+				</button>
+				<!-- Next -->
+				<button onclick="showCorrespondingSpeakerOrJudge(this)" data-aos="fade-up" class="speaker">
+					<img src="{% static 'website/speakers_and_judges/images/speakers/Alon.jpg' %}" alt="" width="200px" height="250px">
+					<br />
+					<p class="social-icons">
+						<a href="https://twitter.com/AlonGrinshpoon"><i class='bx bxl-twitter'></i></a>
+						<a href="https://www.instagram.com/alongrinshpoon/"><i class='bx bxl-instagram' ></i></a>
+						<a href="https://www.linkedin.com/in/alongrinshpoon/"><i class='bx bxl-linkedin-square' ></i></a>
+					</p>
+					<p class="name">Mr. Alon Grinshpoon</p>
+					<p class="date">26th February | 6pm</p>
+					<p class="info"><br>- Designation: Founder & CEO @ echoAR <br>
+						- Topic: How to Build a Cloud-Connected AR/VR App in 15 Minutes or Less <br><br>
+						Alon is a Java native-speaker with countless hours of programming in Java, Android, Unity, C#, C and Bash. Alon loves to create AR/VR apps, GUI and graphically design applications, open-source programs and API integration alongside his experience and passion for cloud and computer communication networks.</p>
+				</button>
+				<!-- Next -->
+				<button onclick="showCorrespondingSpeakerOrJudge(this)" data-aos="fade-up" class="speaker">
+					<img src="{% static 'website/speakers_and_judges/images/speakers/MalihaN.jpg' %}" alt="" width="200px" height="250px">
+					<br />
+					<p class="social-icons">
+						<a href="https://twitter.com/mia9059"><i class='bx bxl-twitter'></i></a>
+						<a href="https://www.instagram.com/mia9059/"><i class='bx bxl-instagram' ></i></a>
+						<a href="https://www.linkedin.com/in/malihanan/"><i class='bx bxl-linkedin-square' ></i></a>
+					</p>
+					<p class="name">Ms. Maliha Nan</p>
+					<p class="date">27th February | 4pm</p>
+					<p class="info"><br> - Designation: Co-organizer, Flutter Valsad <br>
+						- Topic: Building Beautiful Apps With Flutter <br><br>
+						Introduction to Flutter, how it works and it's underlying architecture. Hand's on workshop to make beautiful UI using Flutter.</p>
+				</button>
+				<!-- Next -->
+				<button onclick="showCorrespondingSpeakerOrJudge(this)" data-aos="fade-up" class="speaker">
+					<img src="{% static 'website/speakers_and_judges/images/speakers/Sanket singh.jpg' %}" alt="" width="200px" height="250px">
+					<br />
+					<p class="social-icons">
+						<a href="https://twitter.com/sanket143singh"><i class='bx bxl-twitter'></i></a>
+						<a href="https://www.instagram.com/sanket.singh__/"><i class='bx bxl-instagram' ></i></a>
+						<a href="https://www.linkedin.com/in/singhsanket143/"><i class='bx bxl-linkedin-square' ></i></a>
+					</p>
+					<p class="name">Mr. Sanket Singh</p>
+					<p class="date">28th February | 1pm</p>
+					<p class="info"><br> - Designation: SDE at LinkedIn(Parent company MICROSOFT) <br>
+						- About the Workshop:
+						Come and experience the programming world through a hands-on workshop with CodeChef.
+						<br><br> In the workshop, the
+						speaker will give a walkthrough of what, why, and how of competitive programming, along with fun and exciting
+						activities that will help you provide a headstart in cracking the coding interviews. <br> <br></p>
+				</button>
+				<!-- Next -->
+				<button onclick="showCorrespondingSpeakerOrJudge(this)" data-aos="fade-up" class="speaker">
+					<img src="{% static 'website/speakers_and_judges/images/speakers/ali.jpg' %}" alt="" width="200px" height="250px">
+					<br />
+					<p class="social-icons">
+						<a href="https://twitter.com/ialimustufa"><i class='bx bxl-twitter'></i></a>
+						<a href="https://www.instagram.com/ialimustufa/"><i class='bx bxl-instagram' ></i></a>
+						<a href="https://www.linkedin.com/in/ialimustufa/"><i class='bx bxl-linkedin-square' ></i></a>
+					</p>
+					<p class="name">Mr. Ali Mustufa Shaikh</p>
+					<p class="date">1st March | 4pm</p>
+					<p class="info"><br>- Designation: Student Community Manager @ Postman <br>
+						- Topic: Introduction to TensorFlow ecosystem. <br> <br>
+						Ali Mustufa Shaikh is a Student Community Manager at Postman , a Software Innovator at Intel, a TEDx Speaker, a Cloud & ML Trainer. He has been awarded the prestigious IEEE MGA Larry K. Wilson Regional Student Volunteer Awardee (R10-APAC) for his contributions to the student communities.
+					</p>
+				</button>
+				<!-- Next -->
+				<button onclick="showCorrespondingSpeakerOrJudge(this)" data-aos="fade-up" class="speaker">
+					<img src="{% static 'website/speakers_and_judges/images/speakers/Rahul.jpg' %}" alt="" width="200px" height="250px">
+					<br />
+					<p class="social-icons">
+						<!-- <a href=""><i class='bx bxl-twitter'></i></a> -->
+						<a href="https://www.instagram.com/rahul.kachroo/"><i class='bx bxl-instagram' ></i></a>
+						<a href="https://www.linkedin.com/in/rahul-kachroo-47a69724/"><i class='bx bxl-linkedin-square' ></i></a>
+					</p>
+					<p class="name">Mr. Rahul Kachroo</p>
+					<p class="date">2nd March | 6pm</p>
+					<p class="info"><br> - Designation: Director of Business Development at Ui Path <br>
+						- Topic: Disruptive Technologies that are used outside India <br> <br>
+						Mr. Rahul Kachroo is the Director of Business Development at Ui Path. He is also a graduate from IIM Ahemdabad. <br> 
+						A disruptive technology sweeps away the systems or habits it replaces because it has attributes that are recognisably superior. Catch an insight into this unchartered territory with Mr. Rahul Kachroo.
+						</p>
+				</button>
+				<!-- Next -->
+				<button onclick="showCorrespondingSpeakerOrJudge(this)" data-aos="fade-up" class="speaker">
+					<img src="{% static 'website/speakers_and_judges/images/speakers/Venkatesh.jpg' %}" alt="" width="200px" height="250px">
+					<br />
+					<p class="social-icons">
+						<a href="https://twitter.com/Venkatesh_WSS"><i class='bx bxl-twitter'></i></a>
+						<a href="https://www.instagram.com/venkatesh_krishna_murthy/"><i class='bx bxl-instagram' ></i></a>
+						<a href="https://www.linkedin.com/in/venkateshtheinnovator/"><i class='bx bxl-linkedin-square' ></i></a>
+					</p>
+					<p class="name">Mr. Venkatesh Krishna Murthy</p>
+					<p class="date">3rd March | 6pm</p>
+					<p class="info"><br> - Designation: Founder & CEO, Wharf Street Strategies <br>
+						- Topic: ' Awaken Your Warrior' <br>
+						- Description: A roadmap to unlock one's potential <br> <br>
+						Mr. Venkatesh Krishna Murthy is the founder and CEO of,
+						Wharf Street Strategies which deals in Deep Tech like Blockchain, Artificial Intelligence & Machine Learning. It is also develops on Emerging marketing Techniques for digital marketing.
+						</p>
+				</button>
+				<!-- Next -->
+				<button onclick="showCorrespondingSpeakerOrJudge(this)" data-aos="fade-up" class="speaker">
+					<img src="{% static 'website/speakers_and_judges/images/speakers/Saurabh Jain.jpg' %}" alt="" width="200px" height="250px">
+					<br />
+					<p class="social-icons">
+						<a href=""><i class='bx bxl-twitter'></i></a>
+						<a href=""><i class='bx bxl-instagram' ></i></a>
+						<a href=""><i class='bx bxl-linkedin-square' ></i></a>
+					</p>
+					<p class="name">Mr. Saurabh Jain</p>
+					<p class="date">5th March | 6pm</p>
+					<p class="info"><br>- Designation: Ex Vice President, PayTM | Founder Fun2Do Labs <br>
+						- Topic: 3 Steps to StartUp Success <br> <br> Mr.Saurabh was Vice President at Paytm. He was heading the ‘Paytm - Build for India’ program and also has an active role in startup products, developer relations, social impact / CSR, education and training within Paytm.<br>
+
+						Mr. Saurabh Jain is also the founder of Fun2Do Labs which is pioneering research into transmedia education, maker education and startup education. <br>
+						
+						He is a Chartered Accountant with keen interest in technology and has authored 2 books on mobile application technology. He wrote 'Mobile Phone Programming', India's first book on mobile app programming.</p>
+				</button>
+			</div>
+		</div>
+		
+
+		<div class="judges" style="display: none;">
+			<h2 class="heading" data-aos="fade-up">Judges</h2>
+			<div class="judges-container">
+				<!-- Copy This -->
+				
+				<button onclick="showCorrespondingSpeakerOrJudge(this)" data-aos="fade-up" class="judge">
+					<img src="{% static 'website/speakers_and_judges/images/Judges/helios.jpg' %}" alt="" width="200px" height="250px">
+					<br />
+					<p class="social-icons">
+						<!-- <a href=""><i class='bx bxl-twitter'></i></a> -->
+						<!-- <a href=""><i class='bx bxl-instagram' ></i></a> -->
+						<a href="https://www.linkedin.com/in/helios1101/"><i class='bx bxl-linkedin-square' ></i></a>
+					</p>
+					<p class="name">Mr. Harshit Singh</p>
+					<p class="date">7th March | Final Pitching Round</p>
+					<p class="info"><br>- Designation: SDE@Amazon India | Community Manager @CodeAsylums <br>
+						 <br>Mr. Harshit Singh is a Software Development Engineer at Amazon India. He is working to spread awareness to the community around to improve the current learning System 
+						 that requires creative and innovative minds in the field of Software Development, 
+						 who apart from skills also requires an environment and mindset to live impact fully and collaboratively.
+						 </p>
+				</button>
+
+				<!-- Add More Here -->
+
+				<button onclick="showCorrespondingSpeakerOrJudge(this)" data-aos="fade-up" class="judge">
+					<img src="{% static 'website/speakers_and_judges/images/Judges/pratyush.jpeg' %}" alt="" width="200px" height="250px">
+					<br />
+					<p class="social-icons">
+						<!-- <a href="https://twitter.com/surentips"><i class='bx bxl-twitter'></i></a> -->
+						<!-- <a href=""><i class='bx bxl-instagram' ></i></a> -->
+						<a href="https://www.linkedin.com/in/pratsy/"><i class='bx bxl-linkedin-square' ></i></a>
+					</p>
+					<p class="name">Mr. Pratyush Agarwal</p>
+					<p class="date">7th March | Final Pitching Round</p>
+					<p class="info"><br>- Designation: CEO and Founder of Code Asylums <br>
+						 <br>Mr Pratyush Agarwal has 2.5+ yrs of technical experience while working with D.E Shaw & Co. (A New York-based hedge fund), Paysafe (Payments in US/UK), Ayopop (Wallets and Lending in Indonesia)
+						<br>
+						 He has Worked majorly in Technologies related to Backend Platforms, Distributed Systems, System Scalability, Machine Learning, Bigdata & Blockchain. <br>
+						 Speaker and Motivator at various platforms (PyCon), institutions (IITs, NITs, BITs, etc.), organizations, and communities to build a healthy, communal, and interactive mindset towards coding, technology, learning, and human behavior.
+						 </p>
+				</button>
+
+				<!-- Add More Here -->
+
+				<button onclick="showCorrespondingSpeakerOrJudge(this)" data-aos="fade-up" class="judge">
+					<img src="{% static 'website/speakers_and_judges/images/Judges/Sandeep Singh.jpeg' %}" alt="" width="200px" height="250px">
+					<br />
+					<p class="social-icons">
+						<!-- <a href=""><i class='bx bxl-twitter'></i></a> -->
+						<!-- <a href=""><i class='bx bxl-instagram' ></i></a> -->
+						<a href="https://www.linkedin.com/in/sandybcsald/"><i class='bx bxl-linkedin-square' ></i></a>
+					</p>
+					<p class="name">Mr. Sandeep Singh</p>
+					<p class="date">7th March | Final Pitching Round</p>
+					<p class="info"><br>- Designation: Growth Hacker@ commudle , Community Manager codeasylums <br>
+						 <br>Mr. Sandeep Singh is a 20-year-old Open Source enthusiast who writes code out of the profession and loves to engage in tech communities out of passion. Mr. Sandeep has a comprehensive developer background and his emphasis is on scalability and innovation. 
+						 </p>
+				</button>
+
+				<!-- Add More Here -->
+				<button onclick="showCorrespondingSpeakerOrJudge(this)" data-aos="fade-up" class="judge">
+					<img src="{% static 'website/speakers_and_judges/images/Judges/rushabh.jpeg' %}" alt="" width="200px" height="250px">
+					<br />
+					<p class="social-icons">
+						<a href="https://twitter.com/rushabh96975767?s=09"><i class='bx bxl-twitter'></i></a>
+						<a href="https://www.instagram.com/_rushabh_parmar_121?r=nametag"><i class='bx bxl-instagram' ></i></a>
+						<a href="https://www.linkedin.com/in/rushabh-parmar-8a4b61116/"><i class='bx bxl-linkedin-square' ></i></a>
+					</p>
+					<p class="name">Mr. Rushabh Parmar</p>
+					<p class="date">7th March | Final Pitching Round</p>
+					<p class="info"><br>- Designation: Blockchain Engineer at XinFin Hybrid Blockchain <br>
+						 <br>Mr. Rushabh Parmar is Blockchain Engineer at XinFin Hybrid Blockchain which is an open source hybrid blockchain platform.
+
+						 Combining the best attributes of both private and public blockchain XinFin offers a scalable, secure enterprise-grade blockchain that is well suited for highly-regulated industries and commercially sensitive data.
+						 </p>
+				</button>
+			</div>
+		</div>
+
+		<div class="speaker-or-judge-info" style="display: none;">
+			<div class="person-info">
+				<h2 class="heading name">Aman Dhattarwal</h2>
+				<img alt="" width="200px" height="250px">
+			</div>
+			<p class="info-1">At This Time</p>
+			<p class="info-2">Chaliye Shuru Karte hain</p>
+		</div>
+
+	</div>
+
+	<script src="{% static 'website/speakers_and_judges/js/index.js' %}"></script>
+</section>
